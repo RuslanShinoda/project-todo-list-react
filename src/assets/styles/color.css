@@ -1,0 +1,8 @@
+:root {
+  --background-color: #efefef;
+  --first-color: hsla(154, 15%, 49%, 1);
+  --second-color: hsla(147, 21%, 70%, 1);
+  --third-color: hsla(167, 29%, 85%, 1);
+  --fourth-color: hsla(180, 31%, 94%, 1);
+  --fifth-color: hsla(133, 100%, 98%, 1);
+}

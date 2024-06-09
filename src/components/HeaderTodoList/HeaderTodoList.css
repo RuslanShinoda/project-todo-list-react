@@ -1,0 +1,158 @@
+@import url('../../assets/styles/color.css');
+
+.mainLogo {
+  border-radius: 50%;
+  max-width: 80px;
+  border: 2px solid var(--first-color);
+}
+
+header {
+  background-color: var(--fifth-color);
+  padding-bottom: 50px;
+}
+
+#headerTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 20px;
+  font-size: 2.5em;
+  color: var(--first-color);
+}
+
+#headerTitle>h1 {
+  margin: 0;
+}
+
+#addNewTaskContainer {
+  margin: 20px auto;
+  width: 70%;
+  position: relative;
+}
+
+.addNewTask {
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--second-color);
+  background-color: var(--first-color);
+}
+
+.addNewTask,
+.addNewTask__icon,
+.addNewTask__text {
+  transition: all 0.3s;
+}
+
+.addNewTask .addNewTask__text {
+  transform: translateX(30px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.addNewTask .addNewTask__icon {
+  position: absolute;
+  transform: translateX(103px);
+  height: 40px;
+  width: 40px;
+  background-color: var(--second-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addNewTask .svg {
+  width: 30px;
+  stroke: #fff;
+}
+
+.addNewTask:hover {
+  background: var(--second-color);
+}
+
+.addNewTask:hover .addNewTask__text {
+  color: transparent;
+}
+
+.addNewTask:hover .addNewTask__icon {
+  width: 140px;
+  transform: translateX(0);
+}
+
+.addNewTask:active .addNewTask__icon {
+  background-color: var(--third-color);
+}
+
+.addNewTask:active {
+  border: 1px solid var(--third-color);
+}
+
+#addNewTaskInput {
+  width: 100%;
+}
+
+#inputsAddTaskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#inputDateContainer {
+  width: fit-content;
+}
+
+#addTitleForTask,
+#addTextForTask,
+#addTagsForTask,
+#addCompletionForTask {
+  border: 1px solid var(--second-color);
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+#addTitleForTask:focus,
+#addTextForTask:focus,
+#addTagsForTask:focus,
+#addCompletionForTask:focus {
+  outline: none;
+  border-color: var(--third-color);
+}
+
+#addTitleForTask::placeholder,
+#addTextForTask::placeholder,
+#addTagsForTask::placeholder,
+#addCompletionForTask::placeholder {
+  color: var(--first-color);
+  font-size: large;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0)
+  }
+
+  25% {
+    transform: translateX(5px)
+  }
+
+  50% {
+    transform: translateX(-5px)
+  }
+
+  75% {
+    transform: translateX(5px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.shake {
+  animation: horizontal-shaking 0.5s;
+  box-shadow: rgba(207, 5, 5, 0.16) 0px 3px 6px, rgba(228, 5, 5, 0.23) 0px 3px 6px;
+}

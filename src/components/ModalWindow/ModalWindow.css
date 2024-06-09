@@ -1,0 +1,62 @@
+@import url('../../assets/styles/color.css');
+
+#outsideModalWindowContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; 
+}
+
+#insideModalWindowContainer {
+  background-color: var(--fourth-color);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 80%;
+  text-align: center;
+  color: var(--first-color);
+}
+
+#insideModalWindowContainer h2 {
+  margin-bottom: 20px;
+}
+
+#insideModalWindowContainer div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#modalWindowDeleteButton {
+  background-color: #d9534f; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#modalWindowDeleteButton:hover {
+  background-color: #c9302c; 
+}
+
+#modalWindowCancelButton {
+  background-color: #5bc0de; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#modalWindowCancelButton:hover {
+  background-color: #31b0d5; }
